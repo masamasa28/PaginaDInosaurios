@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Mundo de Blue </title>
+    <link rel="stylesheet" href="/paginaDinos/styles/StyleInicio.css">
+    <link rel="stylesheet" href="/paginaDinos/styles/dinosIndividuales.css">
+</head>
+<body>
+    <header>
+        <h1>El Mundo de Blue <i class="fas fa-meteor"></i></h1>
+        <p>Descubre el fascinante mundo de los dinosaurios junto a blue nuestro velociraptor favorito
+       y tus paleontologos favoritos mafe y sebb</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="inicio.html">Inicio <i class="fas fa-home"></i></a></li>
+            <li><a href="tiposDinos.html">Tipos de Dinosaurios <i class="fas fa-bone"></i></a></li>
+            <li><a href="galeriaDinos.html">Galería <i class="fas fa-camera"></i></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Spinosaurio</h2>
+        <div class="dino-content">
+            <div class="dino-images">
+                <img src="/paginaDinos/galeriaDinos/modeloSpigosaurio/cuerpo.jpeg" alt="T-Rex" onclick="loadDinoModel('rex')">
+                <img src="/paginaDinos/galeriaDinos/modeloSpigosaurio/huevo.jpeg" alt="Huevo T-Rex" onclick="loadDinoModel('egg')">
+            </div>
+            <div class="large-image">
+                <canvas id="dinosaurCanvas"></canvas>
+            </div>
+            <div class="dino-info">
+                <p>El Spinosaurio fue uno de los dinosaurios carnívoros más grandes, conocido por su distintiva vela dorsal. Vivió durante el período Cretácico, hace aproximadamente 112 a 93 millones de años.</p>
+                <p>Características principales:</p>
+                <ul>
+                    <li>Podía medir hasta 18 metros de largo, siendo más largo que el T-Rex.</li>
+                    <li>Pesaba entre 7 y 20 toneladas.</li>
+                    <li>Era semiacuático y se alimentaba de peces grandes y otros dinosaurios.</li>
+                    <li>Su característica más distintiva era una gran vela en su espalda, formada por espinas alargadas de sus vértebras.</li>
+                </ul>
+                <p>El Spinosaurio es considerado uno de los depredadores más formidables, con habilidades tanto en tierra como en el agua. Su nombre significa "lagarto espinoso".</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 El Mundo de Blue. Todos los derechos reservados.</p>
+    </footer>
+
+    <<script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.min.js"></script>
+    <script src="/paginaDinos/js/spinosaurio3D.js"></script>
+    <script>
+        function showLargeImage(src) {
+            // Esta función ya no es necesaria, pero la mantenemos por compatibilidad
+        }
+    </script>
+
+<div class="dino-decoration">🦖 <i class="fas fa-paw"></i></div>
+
+<!-- Añadimos los iconos de Font Awesome -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</body>
+</html>

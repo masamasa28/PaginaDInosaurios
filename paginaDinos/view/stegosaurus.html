@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Mundo de Blue </title>
+    <link rel="stylesheet" href="/paginaDinos/styles/StyleInicio.css">
+    <link rel="stylesheet" href="/paginaDinos/styles/dinosIndividuales.css">
+</head>
+<body>
+    <header>
+        <h1>El Mundo de Blue <i class="fas fa-meteor"></i></h1>
+        <p>Descubre el fascinante mundo de los dinosaurios junto a blue nuestro velociraptor favorito
+       y tus paleontologos favoritos mafe y sebb</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="inicio.html">Inicio <i class="fas fa-home"></i></a></li>
+            <li><a href="tiposDinos.html">Tipos de Dinosaurios <i class="fas fa-bone"></i></a></li>
+            <li><a href="galeriaDinos.html">Galería <i class="fas fa-camera"></i></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Stegosaurus</h2>
+        <div class="dino-content">
+            <div class="dino-images">
+                <img src="/paginaDinos/galeriaDinos/modeloStegosaurio/images.jpeg" alt="T-Rex" onclick="loadDinoModel('rex')">
+                <img src="/paginaDinos/galeriaDinos/modeloStegosaurio/huevo.jpeg" alt="Huevo T-Rex" onclick="loadDinoModel('egg')">
+            </div>
+            <div class="large-image">
+                <canvas id="dinosaurCanvas"></canvas>
+            </div>
+            <div class="dino-info">
+                <p>El Stegosaurus es conocido por sus placas dorsales y su cola con púas, que utilizaba para defenderse de depredadores. Vivió hace aproximadamente 155 a 150 millones de años durante el período Jurásico tardío.</p>
+                <p>Características principales:</p>
+                <ul>
+                    <li>Podía medir hasta 9 metros de largo y pesaba cerca de 3 toneladas.</li>
+                    <li>Tenía hasta 17 placas grandes en la espalda que podrían haber servido para regular la temperatura corporal.</li>
+                    <li>Sus cuatro púas en la cola, conocidas como "thagomizer", eran utilizadas como armas de defensa contra depredadores.</li>
+                </ul>
+                <p>El Stegosaurus era un herbívoro, alimentándose principalmente de plantas bajas, y es uno de los dinosaurios más fácilmente reconocibles por sus características distintivas.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 El Mundo de Blue. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.min.js"></script>
+    <script src="/paginaDinos/js dinos/stegosaurio.js"></script>
+    
+    <script>
+        function showLargeImage(src) {
+            // Esta función ya no es necesaria, pero la mantenemos por compatibilidad
+        }
+    </script>
+     <div class="dino-decoration">🦖</div>
+
+     <div class="dino-decoration">🦖 <i class="fas fa-paw"></i></div>
+
+     <!-- Añadimos los iconos de Font Awesome -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+ </body>
+</html>
