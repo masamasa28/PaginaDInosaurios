@@ -8,7 +8,7 @@
 - **Modelos personalizados**: Incluye modelos creados específicamente en Blender para el proyecto.
 - **Animaciones dinámicas**: Los modelos cuentan con movimientos básicos implementados con Three.js.
 - **Interfaz web**: Diseño simple e intuitivo para la interacción con los modelos.
-- **Renderizado en navegador**: Utiliza WebGL para mostrar los modelos 3D.
+
 
 ## Estado del proyecto
 
